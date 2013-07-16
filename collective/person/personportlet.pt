@@ -1,0 +1,54 @@
+<dl class="portlet portletPerson"
+    tal:define="person view/person;"
+    i18n:domain="collective.person">
+
+    <dt class="portletHeader">
+        <span class="portletTopLeft"></span>
+        <tal:content content="view/title">Header</tal:content>
+        <span class="portletTopRight"></span>
+    </dt>
+
+    <dd class="portletItem">
+
+      <tal:if condition="view/image_tag">
+      <img tal:replace="structure view/image_tag" />
+	  </tal:if>
+
+      <div class="personInfo" tal:condition="person">
+        <div class="portletPersonPortrait"
+						 tal:condition="person/empl_portrait_url">
+            <img src="portrait.jpg" alt="Portrait" width="75" height="100"
+                 tal:attributes="src person/empl_portrait_url; alt person/empl_name"/>
+        </div>
+        <a tal:attributes="href person/url">
+            <div tal:content="person/empl_name">Name</div>
+        </a>
+        <div tal:content="person/empl_stillingsbetegnelse">empl_stillingsbetegnelse</div>
+        <div>
+            T + <span tal:content="person/empl_phone">empl_phone</span>
+            </div>
+        <div tal:define="email person/empl_email">
+            E
+            <tal:email tal:content="structure python:context.spamProtect(email)"></tal:email>
+            </div>
+      </div>
+<!--       <div class="personInfo"
+           tal:attributes="class python:show_group and '%s haveGroup' % attrs['class'] or attrs['class']">
+          <div class="personJob" tal:content="view/job_title"> </div>
+          <div class="personEmail" tal:define="phone view/phone" tal:condition="phone">
+               <span i18n:translate="tlf">Phone</span>
+               <tal:email tal:content="phone"></tal:email>
+	      </div>
+          <div class="personEmail" tal:define="email view/email">
+               <span i18n:translate="email">E-mail</span>
+               <tal:email tal:content="structure python:context.spamProtect(email)"></tal:email>
+          </div>
+      </div>
+ -->    </dd>
+
+    <dd class="portletFooter">
+        <span class="portletBottomLeft"></span>
+        <span class="portletBottomRight"></span>
+    </dd>
+
+</dl>

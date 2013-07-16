@@ -1,0 +1,88 @@
+# Sune Woeller <woeller@headnet.dk>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: collective.person\n"
+"POT-Creation-Date: 2008-12-11 18:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Sune Woeller <woeller@headnet.dk>\n"
+"Language-Team: Headnet\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: da\n"
+"Language-Name: Danish\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.person\n"
+
+#: ./personportlet.py:178
+msgid "Add Person Portlet"
+msgstr "Tilføj personportlet"
+
+#: ./personreferenceportlet.py:180
+msgid "Add Person Reference Portlet"
+msgstr "Tilføj reference-personportlet"
+
+#: ./personportlet.py:198
+msgid "Edit Person Portlet"
+msgstr "Rediger personportlet"
+
+#: ./personreferenceportlet.py:213
+msgid "Edit Person Reference Portlet"
+msgstr "Rediger reference-personportlet"
+
+#: ./personreferenceportlet.py:32
+msgid "Person"
+msgstr "Person"
+
+#: ./personportlet.py:64
+msgid "Person portlet"
+msgstr "Personportlet"
+
+#: ./personreferenceportlet.py:69
+msgid "Person reference portlet"
+msgstr "Reference-personportlet"
+
+#: ./personreferenceportlet.py:28
+msgid "Role"
+msgstr "Rolle"
+
+#: ./personportlet.py:25
+msgid "Show group"
+msgstr "Vis gruppe"
+
+#. Default: "This portlet display info about the personreferenced from the portlet."
+#: ./personportlet.py:179
+msgid "description_add_portlet"
+msgstr "Denne portlet viser information om den person der linkes til fra indholdsobjektet hvor portletten oprettes."
+
+#. Default: "This portlet display info about the personreferenced from the portlet."
+#: ./personreferenceportlet.py:181
+msgid "description_add_ref_portlet"
+msgstr "Denne portlet viser information om den person der linkes til fra portletten."
+
+#. Default: "If checked, a link to the group of the contact person will be shown."
+#: ./personportlet.py:26
+msgid "description_show_group"
+msgstr "Hvis valgt, vises et link til den gruppe kontaktpersonen tilhører."
+
+#. Default: "Find object for reference"
+#: ./personreferenceportlet.py:33
+msgid "description_target"
+msgstr "Find personprofil"
+
+#. Default: "E-mail"
+#: ./personportlet.pt:25
+msgid "email"
+msgstr "E-mail"
+
+#. Default: "View all persons working with this area"
+#: ./personportlet.pt:30
+msgid "group_url_label"
+msgstr "Se alle persone på området"
+
+#. Default: "Phone"
+#: ./personportlet.pt:21
+msgid "tlf"
+msgstr "Tlf."
+

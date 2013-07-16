@@ -1,0 +1,49 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="collective.person">
+
+    <five:registerPackage package="." initialize=".initialize" />
+
+    <includeDependencies package="." />
+
+    <i18n:registerTranslations directory="locales" />
+
+
+    <genericsetup:registerProfile
+       name="default"
+       title="collective.person"
+       directory="profiles/default"
+       description="Person portlets, type and behavior"
+       provides="Products.GenericSetup.interfaces.EXTENSION"
+       />
+
+     <plone:portlet
+         name="collective.person.PersonReferencePortlet"
+         interface=".personreferenceportlet.IPersonReferencePortlet"
+         assignment=".personreferenceportlet.Assignment"
+         view_permission="zope2.View"
+         edit_permission="cmf.ManagePortal"
+         renderer=".personreferenceportlet.Renderer"
+         addview=".personreferenceportlet.AddForm"
+         editview=".personreferenceportlet.EditForm"
+         />
+
+     <plone:portlet
+         name="collective.person.PersonPortlet"
+         interface=".personportlet.IPersonPortlet"
+         assignment=".personportlet.Assignment"
+         view_permission="zope2.View"
+         edit_permission="cmf.ManagePortal"
+         renderer=".personportlet.Renderer"
+         addview=".personportlet.AddForm"
+         editview=".personportlet.EditForm"
+         />
+
+  <adapter factory=".indexers.lastname"
+           name="lastname" />
+
+</configure>

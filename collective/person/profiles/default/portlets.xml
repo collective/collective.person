@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<portlets i18n:domain="collective.person" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+
+ <!-- Portlet type registrations -->
+
+ <portlet
+   addview="collective.person.PersonReferencePortlet"
+   title="Person reference portlet"
+   description="Person reference portlet lets the user add references til persons in the portlet."
+   i18n:attributes="title"
+   />
+
+ <portlet
+   addview="collective.person.PersonPortlet"
+   title="Person portlet"
+   description="Person portlet shows the persons chosen on the content object."
+   i18n:attributes="title"
+   />
+
+</portlets>

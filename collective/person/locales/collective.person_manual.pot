@@ -1,0 +1,18 @@
+# Sune Woeller <woeller@headnet.dk>, 2008.
+msgid ""
+msgstr ""
+"Project-Id-Version: headnet.portlet.employee\n"
+"POT-Creation-Date: 2008-10-24 14:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: Sune Woeller <woeller@headnet.dk>\n"
+"Language-Team: Headnet\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: headnet.portlet.employee\n"
+
+
