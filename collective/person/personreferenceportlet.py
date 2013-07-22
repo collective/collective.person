@@ -77,31 +77,20 @@ class Renderer(base.Renderer):
 
     @property
     @memoize
-    def contact_obj(self):
+    def person(self):
         """ get the object the portlet is pointing to """
         if self.data.person is not None:
             obj = self.data.person.to_object
             if obj:
                 if getSecurityManager().checkPermission(permissions.View, obj) \
                   and not obj.isExpired():
-                    return {'name': obj.Title(),
-                            'url': obj.absolute_url(),
-                            'empl_name': obj.Title(),
-                            'empl_stillingsbetegnelse': obj.jobtitle,
-                            'empl_phone': obj.phone,
-                            'empl_email': obj.email,
-                            }
-
-    @property
-    @memoize
-    def image_tag(self):
-        image.tag(scale='person_profile', css_class='imageItem personBoxImage', alt=view.name)
+                    return obj
 
     @property
     def available(self):
-        """Only make this available if a contact is referenced from the project.
+        """Only make this available if a person is referenced from the project.
         """
-        return self.contact_obj is not None
+        return self.person is not None
 
 class AddForm(z3cformhelper.AddForm):
     """

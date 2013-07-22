@@ -83,6 +83,6 @@ msgstr ""
 
 #. Default: "Phone"
 #: ./personportlet.pt:21
-msgid "tlf"
+msgid "phone"
 msgstr ""
 

@@ -1,7 +1,7 @@
 # Sune Woeller <woeller@headnet.dk>, 2008.
 msgid ""
 msgstr ""
-"Project-Id-Version: headnet.portlet.employee\n"
+"Project-Id-Version: collective.person\n"
 "POT-Creation-Date: 2008-10-24 14:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: Sune Woeller <woeller@headnet.dk>\n"
@@ -13,6 +13,6 @@ msgstr ""
 "Language-Code: en\n"
 "Language-Name: English\n"
 "Preferred-Encodings: utf-8 latin1\n"
-"Domain: headnet.portlet.employee\n"
+"Domain: collective.person\n"
 
 

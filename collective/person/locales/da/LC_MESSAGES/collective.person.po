@@ -83,6 +83,6 @@ msgstr "Se alle persone på området"
 
 #. Default: "Phone"
 #: ./personportlet.pt:21
-msgid "tlf"
-msgstr "Tlf."
+msgid "phone"
+msgstr "Telefon"
 
