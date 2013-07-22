@@ -1,0 +1,42 @@
+<model xmlns="http://namespaces.plone.org/supermodel/schema"
+       xmlns:indexer="http://namespaces.plone.org/supermodel/indexer"
+       xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+       i18n:domain="plone">
+    <schema>
+      <field name="firstname" type="zope.schema.TextLine" indexer:searchable="true">
+        <description />
+        <required>True</required>
+        <title i18n:translate="label_person_firstname">First name</title>
+      </field>
+      <field name="lastname" type="zope.schema.TextLine" indexer:searchable="true">
+        <description />
+        <required>True</required>
+        <title i18n:translate="label_person_lastname">Last name</title>
+      </field>
+      <field name="email" type="zope.schema.TextLine" indexer:searchable="true">
+        <description />
+        <required>False</required>
+        <title i18n:translate="label_person_email">Email</title>
+      </field>
+      <field name="phone" type="zope.schema.TextLine" indexer:searchable="true">
+        <description />
+        <required>False</required>
+        <title i18n:translate="label_person_phone">Phone</title>
+      </field>
+      <field name="jobtitle" type="zope.schema.TextLine" indexer:searchable="true">
+        <description />
+        <required>False</required>
+        <title i18n:translate="label_person_jobtitle">Job title</title>
+      </field>
+      <field name="image" type="plone.namedfile.field.NamedBlobImage">
+        <description i18n:translate="help_person_image">Will be shown in the person portlet, and in the view of the person item itself. Image will be scaled to a sensible size.</description>
+        <required>False</required>
+        <title i18n:translate="label_person_image">Portrait</title>
+      </field>
+      <field name="text" type="plone.app.textfield.RichText" indexer:searchable="true">
+        <description />
+        <required>False</required>
+        <title i18n:translate="">Text</title>
+      </field>
+    </schema>
+</model>

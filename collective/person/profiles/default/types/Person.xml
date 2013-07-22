@@ -18,7 +18,6 @@
  </property>
  <property name="default_view_fallback">False</property>
  <property name="add_permission">cmf.AddPortalContent</property>
- <property name="klass">collective.person.person.Person</property>
  <property name="behaviors">
    <element value="plone.app.dexterity.behaviors.metadata.IOwnership"/>
    <element value="plone.app.dexterity.behaviors.metadata.IPublication"/>
@@ -28,8 +27,10 @@
    <element value="plone.app.versioningbehavior.behaviors.IVersionable" />
    <element value="collective.dexteritytextindexer.behavior.IDexterityTextIndexer" />
  </property>
- <property name="schema">collective.person.person.IPerson</property>
+ <property name="schema"></property>
+ <property name="model_file">collective.person.schema:person.xml</property>
  <property name="model_source"></property>
+ <property name="klass">collective.person.person.Person</property>
  <alias from="(Default)" to="(dynamic view)"/>
  <alias from="edit" to="@@edit"/>
  <alias from="sharing" to="@@sharing"/>

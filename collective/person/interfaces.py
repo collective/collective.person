@@ -4,4 +4,4 @@ from collective.person import MessageFactory as _
 
 
 class IBrowserLayer(Interface):
-    """ browser layer for the policy package  """
+    """ browser layer for the collective.person package  """

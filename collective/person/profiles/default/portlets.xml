@@ -6,15 +6,15 @@
  <portlet
    addview="collective.person.PersonReferencePortlet"
    title="Person reference portlet"
-   description="Person reference portlet lets the user add references til persons in the portlet."
+   description="Person reference portlet lets the user add references to persons in the portlet."
    i18n:attributes="title"
    />
 
- <portlet
+<!--  <portlet
    addview="collective.person.PersonPortlet"
    title="Person portlet"
    description="Person portlet shows the persons chosen on the content object."
    i18n:attributes="title"
    />
-
+ -->
 </portlets>

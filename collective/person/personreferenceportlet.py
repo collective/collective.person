@@ -102,7 +102,7 @@ class AddForm(z3cformhelper.AddForm):
                     default=u"This portlet display info about the person "
                              "referenced from the portlet.")
 
-    def create_assignment(self, data):
+    def create(self, data):
         return Assignment(**data)
 
 
