@@ -35,6 +35,7 @@ setup(name='collective.person',
           'plone.app.imagecropping',
           'plone.app.textfield',
           'plone.dexterity',
+          'plone.browserlayer',
           # -*- Extra requirements: -*-
       ],
       entry_points="""

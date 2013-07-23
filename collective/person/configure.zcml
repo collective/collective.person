@@ -10,6 +10,8 @@
 
   <includeDependencies package="." />
   <include package="plone.app.portlets" />
+  <include package="plone.browserlayer" />
+  <include package=".browser" />
 
   <i18n:registerTranslations directory="locales" />
 

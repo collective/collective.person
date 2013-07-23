@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<layers>
+  <layer name="collective.person"
+         interface="collective.person.interfaces.IBrowserLayer"
+         />
+</layers>
