@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<portlets i18n:domain="collective.person" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
+<portlets i18n:domain="plone" xmlns:i18n="http://xml.zope.org/namespaces/i18n">
 
  <!-- Portlet type registrations -->
 
