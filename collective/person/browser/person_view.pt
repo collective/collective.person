@@ -11,27 +11,26 @@
     <metal:content-core define-macro="content-core">
 
     <div>
-
       <div class="imageContainer"
            tal:define="image nocall:context/image"
            tal:condition="python:image and image.getSize()">
           <img tal:define="scale context/@@images|nothing"
-         tal:replace="structure python: scale.scale('image', scale='preview').tag()" />
+         tal:replace="structure python: scale.scale('image', scale='person-portrait').tag()" />
       </div>
-
-      <div tal:condition="context/jobtitle|nothing">
-        <span tal:replace="context/jobtitle" />
+      <div class="personInfo">
+        <div tal:condition="context/jobtitle|nothing"
+             tal:content="context/jobtitle">jobtitle</div>
+        <div tal:condition="context/phone|nothing">
+          <span i18n:translate="phone">Phone</span>: <span tal:content="context/phone">phone</span>
+        </div>
+        <div tal:define="email context/email" tal:condition="email|nothing">
+          <tal:email tal:content="structure python:context.spamProtect(email)"></tal:email>
+        </div>
       </div>
-      <div tal:condition="context/phone|nothing">
-        <span i18n:translate="phone">Phone</span>: <span tal:content="context/phone">phone</span>
-      </div>
-      <div tal:define="email context/email" tal:condition="email|nothing">
-        <tal:email tal:content="structure python:context.spamProtect(email)"></tal:email>
-      </div>
-      <div tal:condition="context/text|nothing">
+      <div class="personText"
+           tal:condition="context/text|nothing">
         <span tal:replace="structure context/text/output" />
       </div>
-
     </div>
 
     </metal:content-core>
