@@ -79,12 +79,15 @@ class Renderer(base.Renderer):
     @memoize
     def person(self):
         """ get the object the portlet is pointing to """
-        if self.data.person is not None:
-            obj = self.data.person.to_object
-            if obj:
-                if getSecurityManager().checkPermission(permissions.View, obj) \
-                  and not obj.isExpired():
-                    return obj
+        try:
+            if self.data.person is not None:
+                obj = self.data.person.to_object
+                if obj:
+                    if getSecurityManager().checkPermission(permissions.View, obj) \
+                      and not obj.isExpired():
+                        return obj
+        except AttributeError:
+            return None
 
     @property
     def available(self):
