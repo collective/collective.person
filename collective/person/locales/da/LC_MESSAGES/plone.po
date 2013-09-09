@@ -15,4 +15,4 @@ msgstr ""
 "Domain: plone\n"
 
 msgid "Person reference portlet"
-msgstr "Kontakt portlet (reference)"
+msgstr "Kontaktportlet (reference)"

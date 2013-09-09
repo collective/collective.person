@@ -19,11 +19,12 @@
         </div>
         <div tal:content="person/title">Name</div>
       </a>
-      <div tal:content="person/jobtitle">jobtitle</div>
-      <div>
+      <div tal:condition="person/jobtitle|nothing" tal:content="person/jobtitle">jobtitle</div>
+      <div tal:condition="person/phone|nothing">
           <span i18n:translate="phone">Phone</span>: <span tal:content="person/phone">phone</span>
       </div>
-      <div tal:define="email person/email">
+      <div tal:define="email person/email"
+           tal:condition="email|nothing">
           <tal:email tal:content="structure python:context.spamProtect(email)"></tal:email>
       </div>
     </div>

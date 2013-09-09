@@ -4,7 +4,7 @@ from plone.dexterity.content import Item
 from plone.app.imagecropping.interfaces import IImageCropping
 
 class IPerson(Interface, IImageCropping):
-    """ Publication """
+    """  """
 
 class Person(Item):
     """Customised person content class"""
