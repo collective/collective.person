@@ -27,8 +27,6 @@
     name="collective.person.PersonReferencePortlet"
     interface=".personreferenceportlet.IPersonReferencePortlet"
     assignment=".personreferenceportlet.Assignment"
-    view_permission="zope2.View"
-    edit_permission="cmf.ManagePortal"
     renderer=".personreferenceportlet.Renderer"
     addview=".personreferenceportlet.AddForm"
     editview=".personreferenceportlet.EditForm"
