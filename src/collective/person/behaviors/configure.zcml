@@ -15,7 +15,7 @@
   <plone:behavior
       name="collective.person.person"
       title="Person Behavior"
-      description="Fields Person information"
+      description="Fields with basic person information"
       provides=".person.IPersonData"
       />
 
@@ -34,7 +34,7 @@
   <plone:behavior
       name="collective.person.namefromusername"
       title="Name from username"
-      description="Use the user namefield as name (basis for the id)"
+      description="Use the username field as name (basis for the id)"
       provides=".user.INameFromUserName"
       />
 

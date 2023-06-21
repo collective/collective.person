@@ -6,7 +6,7 @@
 
   <genericsetup:registerProfile
       name="default"
-      title="Person: Install collective.person"
+      title="Person: Install Person content type"
       description="Configure collective.person package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/default"

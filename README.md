@@ -13,8 +13,7 @@
 
 [![PyPI - Plone Versions](https://img.shields.io/pypi/frameworkversions/plone/collective.person)](https://pypi.org/project/collective.person/)
 
-[![Code analysis checks](https://github.com/collective/collective.person/actions/workflows/code-analysis.yml/badge.svg)](https://github.com/collective/collective.person/actions/workflows/code-analysis.yml)
-[![Tests](https://github.com/collective/collective.person/actions/workflows/tests.yaml/badge.svg)](https://github.com/collective/collective.person/actions/workflows/tests.yml)
+[![Meta](https://github.com/collective/collective.person/actions/workflows/meta.yml/badge.svg)](https://github.com/collective/collective.person/actions/workflows/meta.yml)
 ![Code Style](https://img.shields.io/badge/Code%20Style-Black-000000)
 
 [![GitHub contributors](https://img.shields.io/github/contributors/collective/collective.person)](https://github.com/collective/collective.person)
@@ -28,7 +27,15 @@
 
 ### Content Types
 
-* `Person`: Represent a Person
+* `Person`: A content type representing a person
+
+### Behaviors
+
+| name | title | description |
+| -- | -- | -- |
+| `collective.person.person` | Person Behavior | Fields with basic person information |
+| `collective.person.user` | Link Person to Plone User | Adapts a Person to link it to a Plone User |
+| `collective.person.namefromusername` | Name from username |Use the username field as name (basis for the id) |
 
 ### Permissions
 
@@ -40,10 +47,10 @@
 
 This package adds Indexes and Metadata to Portal Catalog.
 
-| Content Attribute | Index Type | Metadata |
-| -- | -- | -- |
-| country | FieldIndex | ✅ |
-| contact_email | FieldIndex | ❌ |
+| Content Attribute | Index Type | Metadata | Comment |
+| -- | -- | -- | -- |
+| roles | KeywordIndex | ✅ | -- |
+| username | FieldIndex | ✅ | Used when `collective.person.user` behavior is enabled |
 
 ## See it in action
 

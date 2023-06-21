@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-06-21 20:06+0000\n"
+"POT-Creation-Date: 2023-06-21 23:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,125 +14,141 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
-#: collective/person/behaviors/configure.zcml:20
+#: collective/person/behaviors/configure.zcml:31
 msgid "Adapts a Person to link it to a Plone User"
-msgstr ""
+msgstr "Adapta uma Pessoa para conexão a um usuário Plone"
 
-#: collective/person/controlpanel/interfaces.py:37
+#: collective/person/controlpanel/interfaces.py:38
 msgid "Available types of roles"
-msgstr ""
+msgstr "Papéis disponíveis"
 
 #: collective/person/profiles.zcml:13
 msgid "Configure collective.person package"
-msgstr ""
+msgstr "Configura o pacote collective.person"
 
 #: collective/person/profiles/default/types/Person.xml
 msgid "Edit"
-msgstr ""
+msgstr "Editar"
 
 #: collective/person/behaviors/configure.zcml:20
-msgid "Link Person to Plone User"
-msgstr ""
+msgid "Fields with basic person information"
+msgstr "Campos com o básico de informações de uma pessoa"
 
-#: collective/person/behaviors/configure.zcml:28
+#: collective/person/behaviors/configure.zcml:31
+msgid "Link Person to Plone User"
+msgstr "Conectar uma Pessoa a um usuário do Plone"
+
+#: collective/person/behaviors/configure.zcml:39
 msgid "Name from username"
-msgstr ""
+msgstr "Nome a partir do nome de usuário"
 
 #: collective/person/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 #: collective/person/profiles/default/types/Person.xml
 msgid "Person"
-msgstr ""
+msgstr "Pessoa"
 
-#: collective/person/controlpanel/controlpanel.py:30
+#: collective/person/behaviors/configure.zcml:20
+msgid "Person Behavior"
+msgstr "Comportamento de Pessoa"
+
+#: collective/person/controlpanel/controlpanel.py:28
 msgid "Person Settings"
-msgstr ""
+msgstr "Configurações do Person"
 
 #: collective/person/profiles.zcml:13
-msgid "Person: Install collective.person"
-msgstr ""
+msgid "Person: Install Person content type"
+msgstr "Person: Instalar o tipo de conteúdo Pessoa"
+
+#: collective/person/profiles.zcml:29
+msgid "Person: Testing profile"
+msgstr "Person: Perfil de testes"
 
 #: collective/person/profiles.zcml:21
 msgid "Person: Uninstall collective.person"
-msgstr ""
+msgstr "Person: Desinstalar collective.person"
 
-#: collective/person/behaviors/user.py:42
+#: collective/person/behaviors/user.py:40
 msgid "Please inform a username to be used."
-msgstr ""
+msgstr "Por favor informe o nome de usuário a ser utilizado."
 
 #: collective/person/profiles.zcml:21
 msgid "Remove collective.person configuration"
-msgstr ""
+msgstr "Remover collective.person"
 
-#: collective/person/controlpanel/interfaces.py:36
+#: collective/person/controlpanel/interfaces.py:37
 msgid "Roles"
-msgstr ""
+msgstr "Papéis"
 
-#: collective/person/behaviors/user.py:29
+#: collective/person/behaviors/user.py:27
 msgid "There is a person already assigned to this username"
-msgstr ""
+msgstr "Uma outra pessoa já está utilizando este nome de usuário"
 
-#: collective/person/behaviors/user.py:25
+#: collective/person/behaviors/user.py:23
 msgid "There is no user with this username"
-msgstr ""
+msgstr "Não encontramos um usuário com esse nome de usuário"
 
-#: collective/person/behaviors/configure.zcml:28
-msgid "Use the user namefield as name (basis for the id)"
-msgstr ""
+#: collective/person/behaviors/configure.zcml:39
+msgid "Use the username field as name (basis for the id)"
+msgstr "Utilizar o nome de usuário como base para o nome curto do objeto"
 
-#: collective/person/behaviors/user.py:41
+#: collective/person/profiles.zcml:29
+msgid "Used in automated tests"
+msgstr "Utilizado nos testes automatizados"
+
+#: collective/person/behaviors/user.py:39
 msgid "Username"
-msgstr ""
+msgstr "Nome de usuário"
 
 #: collective/person/profiles/default/types/Person.xml
 msgid "View"
-msgstr ""
+msgstr "Visão"
 
 #. Default: "Filter by Person Roles."
 #: collective/person/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "description_qs_roles"
-msgstr ""
+msgstr "Filtrar por papéis"
 
 #. Default: "First name of this person."
-#: collective/person/content/person.py:15
+#: collective/person/behaviors/person.py:16
 msgid "help_first_name"
-msgstr ""
+msgstr "Nome da pessoa"
 
 #. Default: "Last Name of this person."
-#: collective/person/content/person.py:21
+#: collective/person/behaviors/person.py:22
 msgid "help_last_name"
-msgstr ""
+msgstr "Sobrenome desta pessoa"
 
 #. Default: "A short biography for this person."
-#: collective/person/content/person.py:27
+#: collective/person/behaviors/person.py:28
 msgid "help_person_description"
-msgstr ""
+msgstr "Um texto curto sobre esta pessoa"
 
 #. Default: "Roles for this person."
-#: collective/person/content/person.py:33
+#: collective/person/behaviors/person.py:36
 msgid "help_person_roles"
-msgstr ""
+msgstr "Papéis para esta pessoa"
 
 #. Default: "First Name"
-#: collective/person/content/person.py:14
+#: collective/person/behaviors/person.py:15
 msgid "label_first_name"
-msgstr ""
+msgstr "Nome"
 
 #. Default: "Last Name"
-#: collective/person/content/person.py:20
+#: collective/person/behaviors/person.py:21
 msgid "label_last_name"
-msgstr ""
+msgstr "Sobrenome"
 
 #. Default: "Bio"
-#: collective/person/content/person.py:26
+#: collective/person/behaviors/person.py:27
 msgid "label_person_description"
-msgstr ""
+msgstr "Biografia"
 
 #. Default: "Roles"
-#: collective/person/content/person.py:32
+#: collective/person/behaviors/person.py:35
 msgid "label_person_roles"
-msgstr ""
+msgstr "Papéis"
 
 #. Default: "Roles"
 #: collective/person/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
 msgid "label_roles"
-msgstr ""
+msgstr "Papéis"

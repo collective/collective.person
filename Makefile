@@ -113,7 +113,7 @@ bin/i18ndude bin/pocompile: bin/pip
 i18n: bin/i18ndude ## Update locales
 	@echo "$(GREEN)==> Updating locales$(RESET)"
 	bin/update_locale
-	bin/pocompile
+	bin/pocompile src/
 
 # Tests
 .PHONY: test
