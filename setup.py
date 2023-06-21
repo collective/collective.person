@@ -14,7 +14,7 @@ short_description = "A Person content type for Plone."
 
 setup(
     name="collective.person",
-    version="1.0.0.dev0",
+    version="1.0.0a2",
     description=short_description,
     long_description=long_description,
     long_description_content_type="text/markdown",
