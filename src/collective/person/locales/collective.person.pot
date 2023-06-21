@@ -1,0 +1,141 @@
+#--- PLEASE EDIT THE LINES BELOW CORRECTLY ---
+#SOME DESCRIPTIVE TITLE.
+#FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2023-06-21 20:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: collective.person\n"
+
+#: collective/person/behaviors/configure.zcml:20
+msgid "Adapts a Person to link it to a Plone User"
+msgstr ""
+
+#: collective/person/controlpanel/interfaces.py:37
+msgid "Available types of roles"
+msgstr ""
+
+#: collective/person/profiles.zcml:13
+msgid "Configure collective.person package"
+msgstr ""
+
+#: collective/person/profiles/default/types/Person.xml
+msgid "Edit"
+msgstr ""
+
+#: collective/person/behaviors/configure.zcml:20
+msgid "Link Person to Plone User"
+msgstr ""
+
+#: collective/person/behaviors/configure.zcml:28
+msgid "Name from username"
+msgstr ""
+
+#: collective/person/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+#: collective/person/profiles/default/types/Person.xml
+msgid "Person"
+msgstr ""
+
+#: collective/person/controlpanel/controlpanel.py:30
+msgid "Person Settings"
+msgstr ""
+
+#: collective/person/profiles.zcml:13
+msgid "Person: Install collective.person"
+msgstr ""
+
+#: collective/person/profiles.zcml:21
+msgid "Person: Uninstall collective.person"
+msgstr ""
+
+#: collective/person/behaviors/user.py:42
+msgid "Please inform a username to be used."
+msgstr ""
+
+#: collective/person/profiles.zcml:21
+msgid "Remove collective.person configuration"
+msgstr ""
+
+#: collective/person/controlpanel/interfaces.py:36
+msgid "Roles"
+msgstr ""
+
+#: collective/person/behaviors/user.py:29
+msgid "There is a person already assigned to this username"
+msgstr ""
+
+#: collective/person/behaviors/user.py:25
+msgid "There is no user with this username"
+msgstr ""
+
+#: collective/person/behaviors/configure.zcml:28
+msgid "Use the user namefield as name (basis for the id)"
+msgstr ""
+
+#: collective/person/behaviors/user.py:41
+msgid "Username"
+msgstr ""
+
+#: collective/person/profiles/default/types/Person.xml
+msgid "View"
+msgstr ""
+
+#. Default: "Filter by Person Roles."
+#: collective/person/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "description_qs_roles"
+msgstr ""
+
+#. Default: "First name of this person."
+#: collective/person/content/person.py:15
+msgid "help_first_name"
+msgstr ""
+
+#. Default: "Last Name of this person."
+#: collective/person/content/person.py:21
+msgid "help_last_name"
+msgstr ""
+
+#. Default: "A short biography for this person."
+#: collective/person/content/person.py:27
+msgid "help_person_description"
+msgstr ""
+
+#. Default: "Roles for this person."
+#: collective/person/content/person.py:33
+msgid "help_person_roles"
+msgstr ""
+
+#. Default: "First Name"
+#: collective/person/content/person.py:14
+msgid "label_first_name"
+msgstr ""
+
+#. Default: "Last Name"
+#: collective/person/content/person.py:20
+msgid "label_last_name"
+msgstr ""
+
+#. Default: "Bio"
+#: collective/person/content/person.py:26
+msgid "label_person_description"
+msgstr ""
+
+#. Default: "Roles"
+#: collective/person/content/person.py:32
+msgid "label_person_roles"
+msgstr ""
+
+#. Default: "Roles"
+#: collective/person/profiles/default/registry/plone.app.querystring.interfaces.IQueryField.xml
+msgid "label_roles"
+msgstr ""

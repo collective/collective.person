@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="collective.person"
+    >
+
+  <include
+      package="plone.behavior"
+      file="meta.zcml"
+      />
+
+  <!-- Person Behavior -->
+  <plone:behavior
+      name="collective.person.person"
+      title="Person Behavior"
+      description="Fields Person information"
+      provides=".person.IPersonData"
+      />
+
+  <!-- Person to User bridge behavior-->
+  <plone:behavior
+      name="collective.person.user"
+      title="Link Person to Plone User"
+      description="Adapts a Person to link it to a Plone User"
+      factory=".user.PloneUser"
+      provides=".user.IPloneUser"
+      for="collective.person.content.person.IPerson"
+      marker=".user.IPloneUserMarker"
+      />
+
+  <!-- Name Providers -->
+  <plone:behavior
+      name="collective.person.namefromusername"
+      title="Name from username"
+      description="Use the user namefield as name (basis for the id)"
+      provides=".user.INameFromUserName"
+      />
+
+  <adapter factory=".user.NameFromUserName" />
+
+</configure>

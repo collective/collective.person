@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object name="portal_catalog">
+
+  <index meta_type="KeywordIndex"
+         name="roles"
+  >
+    <indexed_attr value="roles" />
+  </index>
+
+  <index meta_type="FieldIndex"
+         name="username"
+  >
+    <indexed_attr value="username" />
+  </index>
+
+  <column value="roles" />
+  <column value="username" />
+
+</object>

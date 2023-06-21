@@ -1,0 +1,14 @@
+<configure xmlns="http://namespaces.zope.org/zope">
+
+  <!-- Roles Vocabularies -->
+  <utility
+      name="collective.person.available_roles"
+      component=".roles.available_roles_vocabulary"
+      />
+
+  <utility
+      name="collective.person.roles"
+      component=".roles.roles_vocabulary"
+      />
+
+</configure>

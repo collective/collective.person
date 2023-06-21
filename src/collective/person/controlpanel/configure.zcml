@@ -1,0 +1,22 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    i18n_domain="collective.person"
+    >
+
+  <!-- Control panel -->
+  <browser:page
+      name="person-controlpanel"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.SettingsControlPanelFormWrapper"
+      permission="cmf.ManagePortal"
+      layer="collective.person.interfaces.IPersonLayer"
+      />
+  <adapter
+      factory=".controlpanel.SettingsConfigletPanel"
+      name="person"
+      />
+
+</configure>

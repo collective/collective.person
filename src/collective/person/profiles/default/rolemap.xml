@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rolemap>
+  <permissions>
+
+    <permission acquire="False"
+                name="collective.person: Add Person"
+    >
+      <role name="Manager" />
+      <role name="Site Administrator" />
+      <role name="Owner" />
+      <role name="Editor" />
+      <role name="Contributor" />
+    </permission>
+
+  </permissions>
+
+</rolemap>

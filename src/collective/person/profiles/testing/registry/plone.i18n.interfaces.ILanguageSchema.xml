@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+  <records interface="plone.i18n.interfaces.ILanguageSchema"
+           prefix="plone"
+           purge="true"
+  >
+    <value key="available_languages">
+      <element>en</element>
+      <element>de</element>
+      <element>nl</element>
+      <element>es</element>
+      <element>fr</element>
+      <element>pt-br</element>
+    </value>
+    <value key="default_language">en</value>
+  </records>
+</registry>
