@@ -45,7 +45,7 @@ def user(portal):
         user = api.user.create(
             email="adams@foo.bar",
             username="adams",
-            password="averylongpasswordbutnotthatlong",
+            password="averylongpasswordbutnotthatlong",  # noQA: S106
             roles=["Member"],
         )
     return user

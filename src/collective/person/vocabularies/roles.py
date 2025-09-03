@@ -15,7 +15,7 @@ def _all_roles() -> dict:
         key = item["token"]
         titles = item["titles"]
         if lang not in titles:
-            default_lang = list(titles.keys())[0]
+            default_lang = next(iter(titles))
             title = titles[default_lang]
         else:
             title = titles[lang]

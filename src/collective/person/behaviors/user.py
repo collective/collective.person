@@ -50,8 +50,7 @@ class IPloneUser(model.Schema):
         username = getattr(data, "username", None)
         if not username:
             return
-        if context is not None:
-            if IPloneUser(context).username == username:
+        if context is not None and IPloneUser(context).username == username:
                 # No change, fine.
                 return
         error = validate_username(username)

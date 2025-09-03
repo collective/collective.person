@@ -1,10 +1,100 @@
-# Generated from:
-# https://github.com/plone/meta/tree/master/config/default
-# See the inline comments on how to expand/tweak this configuration file
+[project]
+name = "collective.person"
+dynamic = ["version"]
+description = "A Person content type for Plone."
+readme = "README.md"
+license = {text = "GNU General Public License v2 (GPLv2)"}
+requires-python = ">=3.10"
+authors = [
+    { name = "Érico Andrei", email = "ericof@plone.org" },
+]
+keywords = [
+    "Plone",
+    "Python",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "Framework :: Plone",
+    "Framework :: Plone :: 6.0",
+    "Framework :: Plone :: 6.1",
+    "Framework :: Plone :: Addon",
+    "Framework :: Zope",
+    "Framework :: Zope :: 5",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "Products.CMFPlone>=6.0.0",
+    "plone.api",
+    "plone.restapi",
+    "collective.contact_behaviors",
+]
+
+[project.optional-dependencies]
+test = [
+    "collective.MockMailHost",
+    "plone.app.robotframework[debug]",
+    "plone.app.testing",
+    "plone.restapi[test]",
+    "zest.releaser[recommended]",
+    "pytest-cov",
+    "pytest-plone>=1.0.0a1",
+    "zest-releaser[recommended]>=9.5.0",
+    "zestreleaser-towncrier>=1.3.0",
+]
+
+[project.urls]
+Changelog = "https://github.com/collective/collective.person/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/collective/collective.person"
+Issues = "https://github.com/collective/collective.person/issues"
+Repository = "https://github.com/collective/collective.person/"
+
+
+[project.entry-points."z3c.autoinclude.plugin"]
+target = "plone"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/collective/person/__init__.py"
+
+[tool.hatch.build]
+strict-naming = true
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "/*.md",
+    "/*.yaml",
+    "/*.yml",
+    "/docs",
+    "/src",
+    "/tests",
+]
+exclude = [
+  "/.github",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/collective",]
+
+[tool.uv]
+managed = false
+
 [tool.towncrier]
+package = "collective.person"
+package_dir = "src"
 directory = "news/"
-filename = "CHANGES.md"
+filename = "CHANGELOG.md"
 start_string = "<!-- towncrier release notes start -->\n"
+issue_format = "[#{issue}](https://github.com/collective/collective.person/issues/{issue})"
 title_format = "## {version} ({project_date})"
 template = "news/.changelog_template.jinja"
 underlines = ["", "", ""]
@@ -39,125 +129,74 @@ directory = "tests"
 name = "Tests"
 showcontent = true
 
-##
-# Add extra configuration options in .meta.toml:
-#  [pyproject]
-#  towncrier_extra_lines = """
-#  extra_configuration
-#  """
-##
-
-[tool.isort]
-profile = "plone"
-
-##
-# Add extra configuration options in .meta.toml:
-#  [pyproject]
-#  isort_extra_lines = """
-#  extra_configuration
-#  """
-##
-
 [tool.black]
-target-version = ["py38"]
-
-##
-# Add extra configuration options in .meta.toml:
-#  [pyproject]
-#  black_extra_lines = """
-#  extra_configuration
-#  """
-##
-
-[tool.codespell]
-ignore-words-list = "discreet,vew"
-skip = "*.po,*.min.js,*.pot,*.po,*.yaml,*.json"
-##
-# Add extra configuration options in .meta.toml:
-#  [pyproject]
-#  codespell_ignores = "foo,bar"
-#  codespell_skip = "*.po,*.map,package-lock.json"
-##
-
-[tool.dependencychecker]
-Zope = [
-  # Zope own provided namespaces
-  'App', 'OFS', 'Products.Five', 'Products.OFSP', 'Products.PageTemplates',
-  'Products.SiteAccess', 'Shared', 'Testing', 'ZPublisher', 'ZTUtils',
-  'Zope2', 'webdav', 'zmi',
-  # ExtensionClass own provided namespaces
-  'ExtensionClass', 'ComputedAttribute', 'MethodObject',
-  # Zope dependencies
-  'AccessControl', 'Acquisition', 'AuthEncoding', 'beautifulsoup4', 'BTrees',
-  'cffi', 'Chameleon', 'DateTime', 'DocumentTemplate',
-  'MultiMapping', 'multipart', 'PasteDeploy', 'Persistence', 'persistent',
-  'pycparser', 'python-gettext', 'pytz', 'RestrictedPython', 'roman',
-  'soupsieve', 'transaction', 'waitress', 'WebOb', 'WebTest', 'WSGIProxy2',
-  'z3c.pt', 'zc.lockfile', 'ZConfig', 'zExceptions', 'ZODB', 'zodbpickle',
-  'zope.annotation', 'zope.browser', 'zope.browsermenu', 'zope.browserpage',
-  'zope.browserresource', 'zope.cachedescriptors', 'zope.component',
-  'zope.configuration', 'zope.container', 'zope.contentprovider',
-  'zope.contenttype', 'zope.datetime', 'zope.deferredimport',
-  'zope.deprecation', 'zope.dottedname', 'zope.event', 'zope.exceptions',
-  'zope.filerepresentation', 'zope.globalrequest', 'zope.hookable',
-  'zope.i18n', 'zope.i18nmessageid', 'zope.interface', 'zope.lifecycleevent',
-  'zope.location', 'zope.pagetemplate', 'zope.processlifetime', 'zope.proxy',
-  'zope.ptresource', 'zope.publisher', 'zope.schema', 'zope.security',
-  'zope.sequencesort', 'zope.site', 'zope.size', 'zope.structuredtext',
-  'zope.tal', 'zope.tales', 'zope.testbrowser', 'zope.testing',
-  'zope.traversing', 'zope.viewlet'
+enable-unstable-feature = [
+    "hug_parens_with_braces_and_square_brackets"
 ]
-'Products.CMFCore' = [
-  'docutils', 'five.localsitemanager', 'Missing', 'Products.BTreeFolder2',
-  'Products.GenericSetup', 'Products.MailHost', 'Products.PythonScripts',
-  'Products.StandardCacheManagers', 'Products.ZCatalog', 'Record',
-  'zope.sendmail', 'Zope'
+
+[tool.ruff]
+target-version = "py310"
+line-length = 88
+fix = true
+lint.select = [
+    # flake8-2020
+    "YTT",
+    # flake8-bandit
+    "S",
+    # flake8-bugbear
+    "B",
+    # flake8-builtins
+    "A",
+    # flake8-comprehensions
+    "C4",
+    # flake8-debugger
+    "T10",
+    # flake8-simplify
+    "SIM",
+    # mccabe
+    "C90",
+    # pycodestyle
+    "E", "W",
+    # pyflakes
+    "F",
+    # pygrep-hooks
+    "PGH",
+    # pyupgrade
+    "UP",
+    # ruff
+    "RUF",
 ]
-'plone.base' = [
-  'plone.batching', 'plone.registry', 'plone.schema','plone.z3cform',
-  'Products.CMFCore', 'Products.CMFDynamicViewFTI',
+lint.ignore = [
+    # DoNotAssignLambda
+    "E731",
 ]
-python-dateutil = ['dateutil']
-ignore-packages = ['plone.volto', 'zestreleaser.towncrier', 'zest.releaser', 'pytest', 'pytest-cov', 'pytest-plone']
-Plone = ['Products.CMFPlone', 'Products.CMFCore', 'Products.GenericSetup']
 
-##
-# Add extra configuration options in .meta.toml:
-#  [pyproject]
-#  dependencies_ignores = "['zestreleaser.towncrier']"
-#  dependencies_mappings = [
-#    "gitpython = ['git']",
-#    "pygithub = ['github']",
-#  ]
-#  """
-##
+[tool.ruff.lint.isort]
+case-sensitive = false
+no-sections = true
+force-single-line = true
+from-first = true
+lines-after-imports = 2
+lines-between-types = 1
+order-by-type = false
 
-[tool.check-manifest]
-ignore = [
-    ".editorconfig",
-    ".meta.toml",
-    ".pre-commit-config.yaml",
-    "tox.ini",
-    ".flake8",
-    "mx.ini",
-    "news/*",
-    "requirements-mxdev.txt",
+[tool.ruff.format]
+preview = true
 
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501", "RUF001", "S101"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.coverage.run]
+source_pkgs = ["collective.person", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/collective/person/locales/*",
 ]
-##
-# Add extra configuration options in .meta.toml:
-#  [pyproject]
-#  check_manifest_ignores = """
-#      "*.map.js",
-#      "*.pyc",
-#  """
-##
 
-
-##
-# Add extra configuration options in .meta.toml:
-#  [pyproject]
-#  extra_lines = """
-#  _your own configuration lines_
-#  """
-##
+[tool.zest-releaser]
+upload-pypi = false # Build and upload with uv
+python-file-with-version = "src/collective/person/__init__.py"

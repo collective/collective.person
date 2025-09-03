@@ -24,7 +24,7 @@ class TestVocabAvailableRoles:
         ],
     )
     def test_token(self, token):
-        assert token in [x for x in self.vocab.by_token]
+        assert token in list(self.vocab.by_token)
 
     @pytest.mark.parametrize(
         "token,title",
@@ -59,7 +59,7 @@ class TestVocabRoles:
         ],
     )
     def test_token(self, token):
-        assert token in [x for x in self.vocab.by_token]
+        assert token in list(self.vocab.by_token)
 
     @pytest.mark.parametrize(
         "token",
@@ -68,7 +68,7 @@ class TestVocabRoles:
         ],
     )
     def test_token_not_in(self, token):
-        assert token not in [x for x in self.vocab.by_token]
+        assert token not in list(self.vocab.by_token)
 
     @pytest.mark.parametrize(
         "token,title",
