@@ -51,8 +51,8 @@ class IPloneUser(model.Schema):
         if not username:
             return
         if context is not None and IPloneUser(context).username == username:
-                # No change, fine.
-                return
+            # No change, fine.
+            return
         error = validate_username(username)
         if error:
             raise Invalid(error)
