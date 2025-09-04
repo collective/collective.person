@@ -4,7 +4,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2023-06-21 23:08+0000\n"
+"POT-Creation-Date: 2025-09-04 01:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgstr ""
 msgid "Adapts a Person to link it to a Plone User"
 msgstr ""
 
-#: collective/person/controlpanel/interfaces.py:38
+#: collective/person/controlpanel/interfaces.py:37
 msgid "Available types of roles"
 msgstr ""
 
@@ -78,7 +78,7 @@ msgstr ""
 msgid "Remove collective.person configuration"
 msgstr ""
 
-#: collective/person/controlpanel/interfaces.py:37
+#: collective/person/controlpanel/interfaces.py:36
 msgid "Roles"
 msgstr ""
 
