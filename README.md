@@ -13,8 +13,7 @@
 
 [![PyPI - Plone Versions](https://img.shields.io/pypi/frameworkversions/plone/collective.person)](https://pypi.org/project/collective.person/)
 
-[![Meta](https://github.com/collective/collective.person/actions/workflows/meta.yml/badge.svg)](https://github.com/collective/collective.person/actions/workflows/meta.yml)
-![Code Style](https://img.shields.io/badge/Code%20Style-Black-000000)
+[![CI](https://github.com/collective/collective.person/actions/workflows/ci.yml/badge.svg)](https://github.com/collective/collective.person/actions/workflows/ci.yml)
 
 [![GitHub contributors](https://img.shields.io/github/contributors/collective/collective.person)](https://github.com/collective/collective.person)
 [![GitHub Repo stars](https://img.shields.io/github/stars/collective/collective.person?style=social)](https://github.com/collective/collective.person)
@@ -66,10 +65,9 @@ Add `collective.person` as a dependency on your package's `setup.py`
 
 ```python
     install_requires = [
-        "collective.person",
         "Plone",
         "plone.restapi",
-        "setuptools",
+        "collective.person",
     ],
 ```
 
@@ -118,6 +116,11 @@ make i18n
 
 ```bash
 make format
+```
+### Lint codebase
+
+```bash
+make lint
 ```
 ### Run tests
 

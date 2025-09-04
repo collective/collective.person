@@ -17,9 +17,9 @@ class TestVocabAvailableRoles:
         assert isinstance(data, dict)
         assert data["items_total"] == 2
         assert data["items"][0]["title"] == "Student"
-        assert data["items"][0]["token"] == "student"
+        assert data["items"][0]["token"] == "student"  # noQA: S105
         assert data["items"][1]["title"] == "Team Member"
-        assert data["items"][1]["token"] == "member"
+        assert data["items"][1]["token"] == "member"  # noQA: S105
 
     def test_anonymous_can_view(self, anon_request):
         response = anon_request.get(self.endpoint)
@@ -28,9 +28,9 @@ class TestVocabAvailableRoles:
         assert isinstance(data, dict)
         assert data["items_total"] == 2
         assert data["items"][0]["title"] == "Student"
-        assert data["items"][0]["token"] == "student"
+        assert data["items"][0]["token"] == "student"  # noQA: S105
         assert data["items"][1]["title"] == "Team Member"
-        assert data["items"][1]["token"] == "member"
+        assert data["items"][1]["token"] == "member"  # noQA: S105
 
     @pytest.mark.parametrize(
         "language_code,idx,expected_title,expected_token",
@@ -67,7 +67,7 @@ class TestVocabRoles:
         assert "batching" not in data
         assert data["items_total"] == 1
         assert data["items"][0]["title"] == "Team Member"
-        assert data["items"][0]["token"] == "member"
+        assert data["items"][0]["token"] == "member"  # noQA: S105
 
     def test_anonymous_can_view(self, anon_request):
         response = anon_request.get(self.endpoint)
@@ -77,7 +77,7 @@ class TestVocabRoles:
         assert "batching" not in data
         assert data["items_total"] == 1
         assert data["items"][0]["title"] == "Team Member"
-        assert data["items"][0]["token"] == "member"
+        assert data["items"][0]["token"] == "member"  # noQA: S105
 
     @pytest.mark.parametrize(
         "language_code,idx,expected_title,expected_token",
