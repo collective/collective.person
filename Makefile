@@ -31,9 +31,11 @@ else
 PLONE_VERSION := 6.1.2
 endif
 
+PLONE_SITE_ID?=Plone
 VENV_FOLDER=$(BACKEND_FOLDER)/.venv
 BIN_FOLDER=$(VENV_FOLDER)/bin
 TESTS_FOLDER=$(BACKEND_FOLDER)/tests
+EXAMPLE_CONTENT_FOLDER=${BACKEND_FOLDER}/src/collective/person/setuphandlers/examplecontent
 
 # Environment variables to be exported
 export PYTHONWARNINGS := ignore
@@ -102,6 +104,15 @@ console: $(VENV_FOLDER) instance/etc/zope.ini ## Start a console into a Plone in
 .PHONY: create-site
 create-site: $(VENV_FOLDER) instance/etc/zope.ini ## Create a new site from scratch
 	@uv run zconsole run instance/etc/zope.conf ./scripts/create_site.py
+
+###########################################
+# Example content
+###########################################
+.PHONY: update-example-content
+update-example-content: $(VENV_FOLDER) ## Export example content inside package
+	@echo "$(GREEN)==> Export example content into $(EXAMPLE_CONTENT_FOLDER) $(RESET)"
+	if [ -d $(EXAMPLE_CONTENT_FOLDER)/content ]; then rm -r $(EXAMPLE_CONTENT_FOLDER)/* ;fi
+	@uv run plone-exporter instance/etc/zope.conf $(PLONE_SITE_ID) $(EXAMPLE_CONTENT_FOLDER)
 
 ###########################################
 # Docs

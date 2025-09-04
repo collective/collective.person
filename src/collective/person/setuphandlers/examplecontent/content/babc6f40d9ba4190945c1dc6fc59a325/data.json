@@ -1,0 +1,92 @@
+{
+  "@id": "/team/james-t-kirk",
+  "@type": "Person",
+  "UID": "babc6f40d9ba4190945c1dc6fc59a325",
+  "allow_discussion": null,
+  "blocks": {
+    "5424fc51-af99-4a8f-bc7b-0212e11479c9": {
+      "@layout": "4ffbd230-2a04-44bb-89f4-6d9e0b71e0c5",
+      "@type": "title",
+      "block": "5424fc51-af99-4a8f-bc7b-0212e11479c9",
+      "fixed": true,
+      "readOnly": true,
+      "required": true
+    },
+    "9fa062d8-18dd-4346-9e23-ad94c1234adc": {
+      "@type": "leadimage",
+      "align": "right"
+    },
+    "a0d71d1c-65bd-43ac-8968-ce3161ef2b80": {
+      "@type": "slate"
+    },
+    "fa15811c-31a6-4b50-9c5e-67f33dab3d84": {
+      "@layout": "aad6de27-6178-4b09-b19a-56ad8c5829e4",
+      "@type": "description",
+      "block": "fa15811c-31a6-4b50-9c5e-67f33dab3d84",
+      "fixed": true,
+      "required": true
+    }
+  },
+  "blocks_layout": {
+    "items": [
+      "9fa062d8-18dd-4346-9e23-ad94c1234adc",
+      "5424fc51-af99-4a8f-bc7b-0212e11479c9",
+      "fa15811c-31a6-4b50-9c5e-67f33dab3d84",
+      "a0d71d1c-65bd-43ac-8968-ce3161ef2b80"
+    ]
+  },
+  "changeNote": "",
+  "contact_email": "kirk@starfleet.space",
+  "contact_phone": "+99654325621",
+  "contact_website": "https://starfleet.space",
+  "created": "2025-09-04T14:12:55+00:00",
+  "description": "Captain",
+  "exclude_from_nav": false,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "first_name": "James",
+  "id": "james-t-kirk",
+  "image": {
+    "blob_path": "babc6f40d9ba4190945c1dc6fc59a325/image/avatar-male-black-35-50-1692694660.jpg",
+    "content-type": "image/jpeg",
+    "filename": "avatar-male-black-35-50-1692694660.jpg",
+    "height": 512,
+    "size": 337802,
+    "width": 512
+  },
+  "image_caption": null,
+  "is_folderish": true,
+  "language": "##DEFAULT##",
+  "last_name": "T. Kirk",
+  "layout": "view",
+  "lock": {},
+  "modified": "2025-09-04T14:20:08+00:00",
+  "review_state": "published",
+  "roles": [
+    "member"
+  ],
+  "title": "James T. Kirk",
+  "type_title": "Person",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2025-09-04T14:12:55+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2025-09-04T14:20:08+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

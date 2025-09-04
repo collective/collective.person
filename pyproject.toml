@@ -34,6 +34,7 @@ dependencies = [
     "plone.api",
     "plone.restapi",
     "collective.contact_behaviors",
+    "plone.exportimport",
 ]
 
 [project.optional-dependencies]

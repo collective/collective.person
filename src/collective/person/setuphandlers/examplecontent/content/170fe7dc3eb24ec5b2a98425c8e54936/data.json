@@ -1,0 +1,80 @@
+{
+  "@id": "/team",
+  "@type": "Document",
+  "UID": "170fe7dc3eb24ec5b2a98425c8e54936",
+  "allow_discussion": null,
+  "blocks": {
+    "0a3b2363-c36e-4377-aadd-45b17555743f": {
+      "@type": "title"
+    },
+    "7aa6c873-d39a-4f34-a2b0-d7827055a64e": {
+      "@type": "description"
+    },
+    "7e920a33-d22d-4be5-8d69-106fabee26f9": {
+      "@type": "listing",
+      "headlineTag": "h3",
+      "variation": "summary"
+    },
+    "d29005a4-4041-48b3-8bee-cb35e0623f16": {
+      "@type": "slate"
+    }
+  },
+  "blocks_layout": {
+    "items": [
+      "0a3b2363-c36e-4377-aadd-45b17555743f",
+      "7aa6c873-d39a-4f34-a2b0-d7827055a64e",
+      "7e920a33-d22d-4be5-8d69-106fabee26f9",
+      "d29005a4-4041-48b3-8bee-cb35e0623f16"
+    ]
+  },
+  "changeNote": "",
+  "contributors": [],
+  "created": "2025-09-04T14:11:22+00:00",
+  "creators": [
+    "admin"
+  ],
+  "description": "Meet our team members",
+  "effective": "2025-09-04T14:20:08+00:00",
+  "exclude_from_nav": false,
+  "expires": null,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "id": "team",
+  "is_folderish": true,
+  "language": "##DEFAULT##",
+  "layout": "document_view",
+  "lock": {
+    "locked": false,
+    "stealable": true
+  },
+  "modified": "2025-09-04T14:20:08+00:00",
+  "preview_caption": null,
+  "preview_image": null,
+  "review_state": "published",
+  "rights": "",
+  "subjects": [],
+  "title": "Team",
+  "type_title": "Page",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2025-09-04T14:11:22+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2025-09-04T14:20:08+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}
