@@ -38,6 +38,7 @@ dependencies = [
 
 [project.optional-dependencies]
 test = [
+    "horse-with-no-namespace",
     "collective.MockMailHost",
     "plone.app.robotframework[debug]",
     "plone.app.testing",
