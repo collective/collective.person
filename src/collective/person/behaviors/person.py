@@ -28,7 +28,7 @@ class IPersonData(model.Schema):
         description=_(
             "help_person_description", default="A short biography for this person."
         ),
-        required=True,
+        required=False,
     )
 
     roles = schema.List(
@@ -38,5 +38,5 @@ class IPersonData(model.Schema):
         value_type=schema.Choice(
             vocabulary="collective.person.available_roles",
         ),
-        required=True,
+        required=False,
     )
