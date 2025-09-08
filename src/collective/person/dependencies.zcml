@@ -5,6 +5,7 @@
 
   <include package="plone.volto" />
   <include package="plone.restapi" />
+  <include package="plone.exportimport" />
   <include package="collective.contact_behaviors" />
 
 
