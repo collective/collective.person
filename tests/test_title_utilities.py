@@ -9,6 +9,7 @@ def payload(persons_payload: list[dict]) -> dict:
     """Return the first person payload."""
     return persons_payload[0]
 
+
 @pytest.fixture
 def person(portal, payload: dict) -> Person:
     """Create a Person content item."""
@@ -29,7 +30,6 @@ class TitleUtility:
 
 
 class TestTitleUtilityDefault(TitleUtility):
-
     utility_name: str = "default"
 
     def test_title(self, person):
@@ -49,8 +49,8 @@ class TestTitleUtilityDefault(TitleUtility):
         assert len(brains) == 1
         assert brains[0].Title == expected
 
-class TestTitleUtilityLastFirst(TitleUtility):
 
+class TestTitleUtilityLastFirst(TitleUtility):
     utility_name: str = "last_first"
 
     def test_title(self, person):
