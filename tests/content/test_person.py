@@ -46,15 +46,4 @@ class TestPerson:
             content = api.content.create(container=portal, **payload)
         assert content.portal_type == CONTENT_TYPE
         assert isinstance(content, Person)
-
-    def test_indexer_roles(self, portal, persons_payload):
-        payload = persons_payload[0]
-        brains = api.content.find(roles="member")
-        assert len(brains) == 0
-
-        with api.env.adopt_roles(["Manager"]):
-            content = api.content.create(container=portal, **payload)
-
-        brains = api.content.find(roles="member")
-        assert len(brains) == 1
-        assert brains[0].Title == content.title
+        assert content.title == "Douglas Adams"

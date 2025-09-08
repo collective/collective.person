@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
-  <version>1000</version>
+  <version>1010</version>
   <dependencies>
     <dependency>profile-collective.contact_behaviors:default</dependency>
   </dependencies>

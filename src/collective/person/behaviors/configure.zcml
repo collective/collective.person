@@ -16,7 +16,10 @@
       name="collective.person.person"
       title="Person Behavior"
       description="Fields with basic person information"
+      factory=".person.PersonData"
       provides=".person.IPersonData"
+      for="collective.person.content.person.IPerson"
+      marker=".person.IPersonDataMarker"
       />
 
   <!-- Person to User bridge behavior-->

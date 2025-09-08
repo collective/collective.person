@@ -9,7 +9,7 @@ class TestSetupInstall:
 
     def test_latest_version(self, profile_last_version):
         """Test latest version of default profile."""
-        assert profile_last_version(f"{PACKAGE_NAME}:default") == "1000"
+        assert profile_last_version(f"{PACKAGE_NAME}:default") == "1010"
 
     @pytest.mark.parametrize("package_name", ["collective.contact_behaviors"])
     def test_dependency_installed(self, installer, package_name):
