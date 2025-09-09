@@ -1,0 +1,92 @@
+{
+  "@id": "/team/erica-ortegas",
+  "@type": "Person",
+  "UID": "2ceb71a0896e4a14817d5ffffc7c33ae",
+  "allow_discussion": null,
+  "blocks": {
+    "6ca82093-3425-4d2d-9922-2d80a21e7566": {
+      "@layout": "4ffbd230-2a04-44bb-89f4-6d9e0b71e0c5",
+      "@type": "title",
+      "block": "ec2294e2-c6c1-49fd-ad0e-e57529374179",
+      "fixed": true,
+      "readOnly": true,
+      "required": true
+    },
+    "ace27998-3724-4c7b-bc99-b30f0426b8fa": {
+      "@type": "slate"
+    },
+    "c26c2dce-51c4-484f-9de3-5996f122b12d": {
+      "@type": "leadimage",
+      "align": "right"
+    },
+    "de233690-d8f2-43f2-815d-0a592cc3220f": {
+      "@layout": "aad6de27-6178-4b09-b19a-56ad8c5829e4",
+      "@type": "description",
+      "block": "b31dcb55-0d45-405a-b4bb-a5041bd57c86",
+      "fixed": true,
+      "required": true
+    }
+  },
+  "blocks_layout": {
+    "items": [
+      "c26c2dce-51c4-484f-9de3-5996f122b12d",
+      "6ca82093-3425-4d2d-9922-2d80a21e7566",
+      "de233690-d8f2-43f2-815d-0a592cc3220f",
+      "ace27998-3724-4c7b-bc99-b30f0426b8fa"
+    ]
+  },
+  "changeNote": "",
+  "contact_email": "ortegas@starfleet.space",
+  "contact_phone": "+99325421255",
+  "contact_website": "https://starfleet.space",
+  "created": "2025-09-04T14:15:28+00:00",
+  "description": "I pilot the ship",
+  "exclude_from_nav": false,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "first_name": "Erica",
+  "id": "erica-ortegas",
+  "image": {
+    "blob_path": "2ceb71a0896e4a14817d5ffffc7c33ae/image/avatar-female-latino_hispanic-26-35-1692704441.jpg",
+    "content-type": "image/jpeg",
+    "filename": "avatar-female-latino_hispanic-26-35-1692704441.jpg",
+    "height": 512,
+    "size": 380725,
+    "width": 512
+  },
+  "image_caption": null,
+  "is_folderish": true,
+  "language": "##DEFAULT##",
+  "last_name": "Ortegas",
+  "layout": "view",
+  "lock": {},
+  "modified": "2025-09-04T14:20:08+00:00",
+  "review_state": "published",
+  "roles": [
+    "member"
+  ],
+  "title": "Erica Ortegas",
+  "type_title": "Person",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2025-09-04T14:15:28+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2025-09-04T14:20:08+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

@@ -128,6 +128,77 @@ make lint
 make test
 ```
 
+## Extending collective.person
+
+### Customizing how the title is generated
+
+`collective.person` provides two built-in strategies for generating the title of a **Person** object:
+
+- **First and Last Name** (`first_last`):
+  The title is generated using the template `{first_name} {last_name}`.
+  Example: `first_name="Douglas"`, `last_name="Adams"` → **Douglas Adams**
+
+- **Last and First Name** (`last_first`):
+  The title is generated using the template `{last_name}, {first_name}`.
+  Example: `first_name="Douglas"`, `last_name="Adams"` → **Adams, Douglas**
+
+You can select the preferred option in the **Person control panel**.
+
+
+### Providing your own title generator
+
+If the default options do not fit your needs, you can register a custom utility that implements the `collective.person.interfaces.IPersonTitle` interface.
+
+#### Step 1: Create your generator
+
+For example, create a file called `title_generator.py` in your package:
+
+```python
+from collective.person.content.person import Person
+from collective.person.interfaces import IPersonTitle
+from zope.interface import implementer
+
+
+@implementer(IPersonTitle)
+class MyTitleGenerator:
+    """Return the title with a custom prefix."""
+
+    name: str = "My title generator"
+
+    def title(self, context: Person) -> str:
+        """Return the title of the person."""
+        first_name = context.first_name
+        last_name = context.last_name or ""
+        return f"Human {first_name} {last_name}".strip()
+```
+
+#### Step 2: Register the utility
+
+In your `configure.zcml`, add:
+
+```xml
+<utility
+    factory=".title_generator.MyTitleGenerator"
+    name="my_title_generator"
+/>
+```
+
+#### Step 3: Activate your generator
+
+To make your generator the default after installation, update the registry via GenericSetup by adding a `registry.xml` file in your profile:
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<registry>
+  <records
+      interface="collective.person.controlpanel.interfaces.IPersonSettings"
+      prefix="person">
+    <value key="title_utility" purge="false">my_title_generator</value>
+  </records>
+</registry>
+```
+
+
 ## License
 
 The project is licensed under GPLv2.

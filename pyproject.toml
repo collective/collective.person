@@ -33,17 +33,16 @@ dependencies = [
     "Products.CMFPlone>=6.0.0",
     "plone.api",
     "plone.restapi",
-    "collective.contact_behaviors",
+    "collective.contact_behaviors>=1.0.0b3",
+    "plone.volto",
+    "plone.exportimport",
 ]
 
 [project.optional-dependencies]
 test = [
-    "horse-with-no-namespace",
-    "collective.MockMailHost",
-    "plone.app.robotframework[debug]",
+    "horse-with-no-namespace>=20250705.0",
     "plone.app.testing",
     "plone.restapi[test]",
-    "zest.releaser[recommended]",
     "pytest-cov",
     "pytest-plone>=1.0.0a1",
     "zest-releaser[recommended]>=9.5.0",
@@ -84,7 +83,7 @@ exclude = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/collective",]
+packages = ["src/collective", ]
 
 [tool.uv]
 managed = false

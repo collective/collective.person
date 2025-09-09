@@ -1,0 +1,171 @@
+{
+  "__version__": "1.0.0",
+  "_blob_files_": [
+    "babc6f40d9ba4190945c1dc6fc59a325/image/avatar-male-black-35-50-1692694660.jpg",
+    "2ceb71a0896e4a14817d5ffffc7c33ae/image/avatar-female-latino_hispanic-26-35-1692704441.jpg",
+    "2331a4139374498e8987ab641eac6013/image/avatar-female-white-26-35-1692704502.jpg",
+    "e12363b8caea4515bfe7133d5a815c89/image/avatar-male-asian-26-35-1692641716.jpg"
+  ],
+  "_data_files_": [
+    "plone_site_root/data.json",
+    "170fe7dc3eb24ec5b2a98425c8e54936/data.json",
+    "e12363b8caea4515bfe7133d5a815c89/data.json",
+    "2ceb71a0896e4a14817d5ffffc7c33ae/data.json",
+    "babc6f40d9ba4190945c1dc6fc59a325/data.json",
+    "2331a4139374498e8987ab641eac6013/data.json"
+  ],
+  "default_page": {},
+  "local_permissions": {
+    "170fe7dc3eb24ec5b2a98425c8e54936": {},
+    "2331a4139374498e8987ab641eac6013": {},
+    "2ceb71a0896e4a14817d5ffffc7c33ae": {},
+    "babc6f40d9ba4190945c1dc6fc59a325": {},
+    "e12363b8caea4515bfe7133d5a815c89": {},
+    "plone_site_root": {
+      "Add portal member": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator",
+          "Owner"
+        ]
+      },
+      "Content rules: Manage rules": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator"
+        ]
+      },
+      "Set own password": {
+        "acquire": false,
+        "roles": [
+          "Authenticated",
+          "Manager",
+          "Site Administrator"
+        ]
+      },
+      "Set own properties": {
+        "acquire": false,
+        "roles": [
+          "Authenticated",
+          "Manager",
+          "Site Administrator"
+        ]
+      },
+      "Show Toolbar": {
+        "acquire": false,
+        "roles": [
+          "Authenticated"
+        ]
+      },
+      "collective.contact_behaviors: View Basic Address Information": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator",
+          "Owner",
+          "Editor",
+          "Contributor",
+          "Reader",
+          "Anonymous"
+        ]
+      },
+      "collective.contact_behaviors: View Contact Information": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator",
+          "Owner",
+          "Editor",
+          "Contributor"
+        ]
+      },
+      "collective.contact_behaviors: View Detailed Address Information": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator",
+          "Owner",
+          "Editor",
+          "Contributor"
+        ]
+      },
+      "collective.person: Add Person": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator",
+          "Owner",
+          "Editor",
+          "Contributor"
+        ]
+      },
+      "plone.resource: Export ZIP file": {
+        "acquire": false,
+        "roles": [
+          "Manager"
+        ]
+      },
+      "plone.resourceeditor: Manage Sources": {
+        "acquire": false,
+        "roles": [
+          "Manager",
+          "Site Administrator"
+        ]
+      }
+    }
+  },
+  "local_roles": {
+    "170fe7dc3eb24ec5b2a98425c8e54936": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "2331a4139374498e8987ab641eac6013": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "2ceb71a0896e4a14817d5ffffc7c33ae": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "babc6f40d9ba4190945c1dc6fc59a325": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "e12363b8caea4515bfe7133d5a815c89": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    },
+    "plone_site_root": {
+      "local_roles": {
+        "admin": [
+          "Owner"
+        ]
+      }
+    }
+  },
+  "ordering": {
+    "170fe7dc3eb24ec5b2a98425c8e54936": 41,
+    "2331a4139374498e8987ab641eac6013": 2,
+    "2ceb71a0896e4a14817d5ffffc7c33ae": 1,
+    "babc6f40d9ba4190945c1dc6fc59a325": 0,
+    "e12363b8caea4515bfe7133d5a815c89": 3
+  },
+  "relations": []
+}

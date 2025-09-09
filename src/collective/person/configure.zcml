@@ -15,4 +15,14 @@
   <include package=".indexers" />
   <include package=".vocabularies" />
 
+  <!-- Title utilities -->
+  <utility
+      factory=".title_utilities.FirstLastName"
+      name="first_last"
+      />
+  <utility
+      factory=".title_utilities.LastFirstName"
+      name="last_first"
+      />
+
 </configure>

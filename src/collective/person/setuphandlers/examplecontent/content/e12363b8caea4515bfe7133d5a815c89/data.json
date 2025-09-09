@@ -1,0 +1,92 @@
+{
+  "@id": "/team/elnor",
+  "@type": "Person",
+  "UID": "e12363b8caea4515bfe7133d5a815c89",
+  "allow_discussion": null,
+  "blocks": {
+    "14006db2-3f95-4695-a17e-033e866e1f5f": {
+      "@type": "slate"
+    },
+    "90066435-67fc-4bd5-9111-7aa7a2a9b0fa": {
+      "@layout": "aad6de27-6178-4b09-b19a-56ad8c5829e4",
+      "@type": "description",
+      "block": "907e3fd8-c01a-465a-b047-0680545550e9",
+      "fixed": true,
+      "required": true
+    },
+    "e937ca94-c81a-4f62-9f8b-6b9150906d51": {
+      "@type": "leadimage",
+      "align": "right"
+    },
+    "f3ac8b71-c9d7-47fb-9bd6-7f86c9ce089e": {
+      "@layout": "4ffbd230-2a04-44bb-89f4-6d9e0b71e0c5",
+      "@type": "title",
+      "block": "cf8f0d17-b5ba-4df2-8a9f-6cb656c2b3cb",
+      "fixed": true,
+      "readOnly": true,
+      "required": true
+    }
+  },
+  "blocks_layout": {
+    "items": [
+      "e937ca94-c81a-4f62-9f8b-6b9150906d51",
+      "f3ac8b71-c9d7-47fb-9bd6-7f86c9ce089e",
+      "90066435-67fc-4bd5-9111-7aa7a2a9b0fa",
+      "14006db2-3f95-4695-a17e-033e866e1f5f"
+    ]
+  },
+  "changeNote": "",
+  "contact_email": "elnor@starfleet.space",
+  "contact_phone": null,
+  "contact_website": "https://starfleet.space",
+  "created": "2025-09-04T14:19:41+00:00",
+  "description": "Cool romulan",
+  "exclude_from_nav": false,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "first_name": "Elnor",
+  "id": "elnor",
+  "image": {
+    "blob_path": "e12363b8caea4515bfe7133d5a815c89/image/avatar-male-asian-26-35-1692641716.jpg",
+    "content-type": "image/jpeg",
+    "filename": "avatar-male-asian-26-35-1692641716.jpg",
+    "height": 512,
+    "size": 268386,
+    "width": 512
+  },
+  "image_caption": null,
+  "is_folderish": true,
+  "language": "##DEFAULT##",
+  "last_name": null,
+  "layout": "view",
+  "lock": {},
+  "modified": "2025-09-04T14:20:08+00:00",
+  "review_state": "published",
+  "roles": [
+    "member"
+  ],
+  "title": "Elnor",
+  "type_title": "Person",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2025-09-04T14:19:41+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2025-09-04T14:20:08+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

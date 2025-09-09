@@ -1,5 +1,11 @@
 <configure xmlns="http://namespaces.zope.org/zope">
 
+  <!-- Title Vocabularies -->
+  <utility
+      name="collective.person.title_utilities"
+      component=".title.title_utilities"
+      />
+
   <!-- Roles Vocabularies -->
   <utility
       name="collective.person.available_roles"

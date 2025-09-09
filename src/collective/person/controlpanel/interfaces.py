@@ -3,6 +3,7 @@
 from collective.person import _
 from plone.autoform import directives
 from plone.schema import JSONField
+from zope import schema
 from zope.interface import Interface
 
 import json
@@ -32,6 +33,14 @@ VOCABULARY_SCHEMA = json.dumps({
 
 
 class IPersonSettings(Interface):
+    title_utility = schema.Choice(
+        title=_("Title Utility"),
+        description=_("Select the utility to use for generating person titles."),
+        vocabulary="collective.person.title_utilities",
+        required=True,
+        default="default",
+    )
+
     roles = JSONField(
         title=_("Roles"),
         description=_("Available types of roles"),

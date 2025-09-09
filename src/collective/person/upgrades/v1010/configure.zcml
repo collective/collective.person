@@ -1,0 +1,21 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    >
+
+  <genericsetup:upgradeSteps
+      profile="collective.person:default"
+      source="1000"
+      destination="1010"
+      >
+    <genericsetup:upgradeDepends
+        title="Set default value for title_utility in the registry"
+        import_steps="plone.app.registry"
+        />
+    <genericsetup:upgradeStep
+        title="Reindex Person content items"
+        handler=".reindex_persons"
+        />
+  </genericsetup:upgradeSteps>
+
+</configure>

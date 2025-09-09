@@ -1,0 +1,92 @@
+{
+  "@id": "/team/una-chin-riley",
+  "@type": "Person",
+  "UID": "2331a4139374498e8987ab641eac6013",
+  "allow_discussion": null,
+  "blocks": {
+    "30ce915e-8a39-4a6e-88a4-c0ee38bb2e9b": {
+      "@type": "slate"
+    },
+    "8f929206-bf27-4f57-8f17-1468a8c12082": {
+      "@layout": "4ffbd230-2a04-44bb-89f4-6d9e0b71e0c5",
+      "@type": "title",
+      "block": "d1d13512-2f74-496b-b538-3a36eca0e4db",
+      "fixed": true,
+      "readOnly": true,
+      "required": true
+    },
+    "9bbf1a3e-e9c5-4d9f-a6dd-4e1f098967f1": {
+      "@layout": "aad6de27-6178-4b09-b19a-56ad8c5829e4",
+      "@type": "description",
+      "block": "feaec965-9610-49c7-a1f6-daf04c4ab192",
+      "fixed": true,
+      "required": true
+    },
+    "b73447bb-2a51-4f34-8094-82d9c3d33f37": {
+      "@type": "leadimage",
+      "align": "right"
+    }
+  },
+  "blocks_layout": {
+    "items": [
+      "b73447bb-2a51-4f34-8094-82d9c3d33f37",
+      "8f929206-bf27-4f57-8f17-1468a8c12082",
+      "9bbf1a3e-e9c5-4d9f-a6dd-4e1f098967f1",
+      "30ce915e-8a39-4a6e-88a4-c0ee38bb2e9b"
+    ]
+  },
+  "changeNote": "",
+  "contact_email": "una@starfleet.space",
+  "contact_phone": null,
+  "contact_website": "https://starfleet.space",
+  "created": "2025-09-04T14:17:01+00:00",
+  "description": "The original number one",
+  "exclude_from_nav": false,
+  "exportimport.constrains": {},
+  "exportimport.conversation": [],
+  "first_name": "Una",
+  "id": "una-chin-riley",
+  "image": {
+    "blob_path": "2331a4139374498e8987ab641eac6013/image/avatar-female-white-26-35-1692704502.jpg",
+    "content-type": "image/jpeg",
+    "filename": "avatar-female-white-26-35-1692704502.jpg",
+    "height": 512,
+    "size": 395872,
+    "width": 512
+  },
+  "image_caption": null,
+  "is_folderish": true,
+  "language": "##DEFAULT##",
+  "last_name": "Chin-Riley",
+  "layout": "view",
+  "lock": {},
+  "modified": "2025-09-04T14:20:08+00:00",
+  "review_state": "published",
+  "roles": [
+    "member"
+  ],
+  "title": "Una Chin-Riley",
+  "type_title": "Person",
+  "version": "current",
+  "versioning_enabled": true,
+  "workflow_history": {
+    "simple_publication_workflow": [
+      {
+        "action": null,
+        "actor": "admin",
+        "comments": "",
+        "review_state": "private",
+        "time": "2025-09-04T14:17:01+00:00"
+      },
+      {
+        "action": "publish",
+        "actor": "admin",
+        "comments": "",
+        "review_state": "published",
+        "time": "2025-09-04T14:20:08+00:00"
+      }
+    ]
+  },
+  "working_copy": null,
+  "working_copy_of": null
+}

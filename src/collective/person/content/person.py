@@ -12,13 +12,15 @@ class Person(Container):
     """A Person."""
 
     @property
-    def title(self):
+    def title(self) -> str:
         """Create title by joining name fields."""
-        first_name = self.first_name
-        last_name = self.last_name or ""
-        return f"{first_name} {last_name}".strip()
+        # Fallback implementing the old logic to return the title
+        from collective.person.behaviors.person import IPersonData
+
+        behavior = IPersonData(self)
+        return behavior.title
 
     @title.setter
-    def title(self, value):
+    def title(self, value: str):
         # title is not writable
         pass

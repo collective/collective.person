@@ -21,6 +21,15 @@
       />
 
   <genericsetup:registerProfile
+      name="demo"
+      title="Person: Demo content"
+      description="Example content for collective.person"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/demo"
+      pre_handler=".setuphandlers.demo.create_example_content"
+      />
+
+  <genericsetup:registerProfile
       name="testing"
       title="Person: Testing profile"
       description="Used in automated tests"

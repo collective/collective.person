@@ -7,11 +7,12 @@
     <value key="available_languages">
       <element>en</element>
       <element>de</element>
-      <element>nl</element>
       <element>es</element>
       <element>fr</element>
       <element>pt-br</element>
+      <element>nl</element>
     </value>
+    <value key="use_combined_language_codes">True</value>
     <value key="default_language">en</value>
   </records>
 </registry>

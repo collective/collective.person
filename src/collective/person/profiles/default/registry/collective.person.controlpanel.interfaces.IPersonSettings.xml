@@ -6,6 +6,9 @@
   <records interface="collective.person.controlpanel.interfaces.IPersonSettings"
            prefix="person"
   >
+    <value key="title_utility"
+           purge="false"
+    >first_last</value>
     <value key="roles"
            purge="false"
     >{
