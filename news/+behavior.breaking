@@ -1,0 +1,1 @@
+The behavior collective.person.person can only by applied to content types providing the collective.person.content.person.IPerson interface. @ericof
