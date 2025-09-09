@@ -9,6 +9,39 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0b1 (2025-09-09)
+
+
+### Breaking changes:
+
+- The behavior collective.person.person can only by applied to content types providing the collective.person.content.person.IPerson interface. @ericof 
+
+
+### New features:
+
+- Upgrade collective.contact_behaviors to version 1.0.0b3. @ericof [#5](https://github.com/collective/collective.person/issues/5)
+- Add profile collective.person:catalog that adds contact_email, contact_phone and contact_website as metadata to the catalog. @ericof [#9](https://github.com/collective/collective.person/issues/9)
+
+
+### Bug fixes:
+
+- Ensure Title, sortable_title and SearchableText are properly indexed for Person content items. @ericof [#7](https://github.com/collective/collective.person/issues/7)
+
+
+### Internal:
+
+- Modernize packaging. @ericof [#3](https://github.com/collective/collective.person/issues/3)
+- Fields IPersonData.description and IPersonData.role are not required anymore. @ericof [#6](https://github.com/collective/collective.person/issues/6)
+- Add support to Python 3.12 and 3.13. @ericof 
+- Drop support to Python 3.8 and 3.9. @ericof 
+- Refactor GHA workflows. @ericof 
+- Replace `pkg_resources` with `pkgutil`. @ericof 
+
+
+### Documentation:
+
+- Add example content demo profile. @ericof 
+
 ## 1.0.0a2 (2023-06-21)
 
 
