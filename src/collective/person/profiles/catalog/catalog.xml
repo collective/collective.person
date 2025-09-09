@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<object name="portal_catalog">
+
+  <column value="contact_email" />
+  <column value="contact_phone" />
+  <column value="contact_website" />
+
+</object>

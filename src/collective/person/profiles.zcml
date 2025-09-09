@@ -26,7 +26,16 @@
       description="Example content for collective.person"
       provides="Products.GenericSetup.interfaces.EXTENSION"
       directory="profiles/demo"
-      pre_handler=".setuphandlers.demo.create_example_content"
+      post_handler=".setuphandlers.demo.create_example_content"
+      />
+
+  <genericsetup:registerProfile
+      name="catalog"
+      title="Person: Catalog contact metadata"
+      description="Implement catalog metadata columns for collective.person"
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/catalog"
+      post_handler=".setuphandlers.catalog.reindex_persons"
       />
 
   <genericsetup:registerProfile
