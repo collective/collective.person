@@ -27,4 +27,5 @@ class LastFirstName:
         """Return the title of the person."""
         first_name = context.first_name
         last_name = context.last_name or ""
-        return f"{last_name}, {first_name}".strip()
+        title = f"{last_name}, {first_name}" if last_name else first_name
+        return title.strip()
