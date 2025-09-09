@@ -18,7 +18,7 @@ class TestVocabTitleUtilities:
     @pytest.mark.parametrize(
         "token",
         [
-            "default",
+            "first_last",
             "last_first",
         ],
     )
@@ -28,7 +28,7 @@ class TestVocabTitleUtilities:
     @pytest.mark.parametrize(
         "token,title",
         [
-            ["default", "First and Last Name"],
+            ["first_last", "First and Last Name"],
             ["last_first", "Last and First Name"],
         ],
     )

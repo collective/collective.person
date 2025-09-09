@@ -134,7 +134,7 @@ make test
 
 `collective.person` provides two built-in strategies for generating the title of a **Person** object:
 
-- **First and Last Name** (default):
+- **First and Last Name** (`first_last`):
   The title is generated using the template `{first_name} {last_name}`.
   Example: `first_name="Douglas"`, `last_name="Adams"` → **Douglas Adams**
 

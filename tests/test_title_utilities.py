@@ -30,7 +30,7 @@ class TitleUtility:
 
 
 class TestTitleUtilityDefault(TitleUtility):
-    utility_name: str = "default"
+    utility_name: str = "first_last"
 
     def test_title(self, person):
         """Test that titles are generated correctly using the default utility."""

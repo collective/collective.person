@@ -1,6 +1,7 @@
 from collective.person import _
 from collective.person.content.person import Person
 from collective.person.interfaces import IPersonTitle
+from collective.person.interfaces import PersonTitle
 from plone import api
 from plone.autoform.interfaces import IFormFieldProvider
 from plone.supermodel import model
@@ -12,9 +13,12 @@ from zope.interface import Interface
 from zope.interface import provider
 
 
-def get_title_utility() -> str:
+def get_title_utility() -> PersonTitle:
     """Return the title utility to be used to generate titles."""
-    utility = api.portal.get_registry_record("person.title_utility", default="default")
+    utility_name = api.portal.get_registry_record(
+        "person.title_utility", default="first_last"
+    )
+    utility: PersonTitle = getUtility(IPersonTitle, name=utility_name)
     return utility
 
 
@@ -71,8 +75,7 @@ class PersonData:
     @property
     def title(self) -> str:
         """Create title by joining name fields."""
-        utility_name = get_title_utility()
-        utility = getUtility(IPersonTitle, name=utility_name)
+        utility = get_title_utility()
         context = self.context
         return utility.title(context)
 

@@ -8,7 +8,7 @@
   >
     <value key="title_utility"
            purge="false"
-    >default</value>
+    >first_last</value>
     <value key="roles"
            purge="false"
     >{

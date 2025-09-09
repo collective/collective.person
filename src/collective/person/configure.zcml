@@ -18,7 +18,7 @@
   <!-- Title utilities -->
   <utility
       factory=".title_utilities.FirstLastName"
-      name="default"
+      name="first_last"
       />
   <utility
       factory=".title_utilities.LastFirstName"
