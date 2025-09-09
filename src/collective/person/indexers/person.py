@@ -1,5 +1,5 @@
 from collective.person.behaviors.person import IPersonData
-from collective.person.content.person import IPerson
+from collective.person.behaviors.person import IPersonDataMarker
 from collective.person.content.person import Person
 from plone.app.dexterity.textindexer import utils
 from plone.base.utils import safe_text
@@ -20,7 +20,7 @@ def zero_fill(matchobj: re.Match) -> str:
 num_sort_regex = re.compile(r"\d+")
 
 
-@indexer(IPerson)
+@indexer(IPersonDataMarker)
 def sortable_title(obj: Person):
     title = IPersonData(obj).title
     # Ignore case, normalize accents, strip spaces
@@ -30,6 +30,6 @@ def sortable_title(obj: Person):
     return sortabletitle
 
 
-@indexer(IPerson)
+@indexer(IPersonDataMarker)
 def title(obj: Person):
     return IPersonData(obj).title
