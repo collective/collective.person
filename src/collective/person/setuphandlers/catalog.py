@@ -3,6 +3,6 @@ from Products.GenericSetup.tool import SetupTool
 
 
 def reindex_persons(context: SetupTool):
-    """Reindex all Person objects to update the index."""
-    idxs = ["sortable_title", "Title", "SearchableText", "object_provides"]
+    """Recatalog all person content to add metadata columns."""
+    idxs = ["contact_email", "contact_phone", "contact_website"]
     reindex_all_person_content(idxs)
