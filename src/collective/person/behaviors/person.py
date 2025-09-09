@@ -91,7 +91,7 @@ class PersonData:
 
     @first_name.setter
     def first_name(self, value: str):
-        """Set fist_name attribute on the object."""
+        """Set first_name attribute on the object."""
         self.context.first_name = value
 
     @property
