@@ -5,7 +5,7 @@ from Products.GenericSetup.tool import SetupTool
 
 
 def reindex_persons(context: SetupTool):
-    """Reindex all Person objects to update the  index."""
+    """Reindex all Person objects to update the index."""
     idxs = ["sortable_title", "Title", "SearchableText", "object_provides"]
     brains = api.content.find(object_provides=IPersonData)
     total = len(brains)
