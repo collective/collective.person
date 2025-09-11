@@ -33,7 +33,7 @@ dependencies = [
     "Products.CMFPlone>=6.0.0",
     "plone.api",
     "plone.restapi",
-    "collective.contact_behaviors>=1.0.0b3",
+    "collective.contact_behaviors>=1.0.0b4",
     "plone.volto",
     "plone.exportimport",
 ]
