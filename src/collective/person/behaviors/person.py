@@ -35,13 +35,11 @@ class IPersonData(model.Schema):
 
     first_name = schema.TextLine(
         title=_("label_first_name", default="First Name"),
-        description=_("help_first_name", default="First name of this person."),
         required=True,
     )
 
     last_name = schema.TextLine(
         title=_("label_last_name", default="Last Name"),
-        description=_("help_last_name", default="Last Name of this person."),
         required=False,
     )
 
