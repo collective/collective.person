@@ -9,6 +9,19 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0b2 (2025-09-11)
+
+
+### New features:
+
+- Upgrade collective.contact_behaviors to version 1.0.0b4. @ericof [#13](https://github.com/collective/collective.person/issues/13)
+
+
+### Bug fixes:
+
+- Remove description from first name and last name fields.
+  Add missing German translations. @davisagli [#11](https://github.com/collective/collective.person/issues/11)
+
 ## 1.0.0b1 (2025-09-09)
 
 
