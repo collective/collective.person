@@ -9,6 +9,13 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0b3 (2025-09-17)
+
+
+### New features:
+
+- Update the collective.contact_behaviors to 1.0.0b5. @iFlameing [#update](https://github.com/collective/collective.person/issues/update)
+
 ## 1.0.0b2 (2025-09-11)
 
 
