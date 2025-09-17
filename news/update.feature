@@ -1,0 +1,1 @@
+Update the collective.contact_behaviors to 1.0.0b5. @iFlameing
