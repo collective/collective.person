@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2025-09-10 19:35+0000\n"
+"POT-Creation-Date: 2025-12-09 19:20+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,7 +91,7 @@ msgstr ""
 msgid "Person: Uninstall collective.person"
 msgstr ""
 
-#: collective/person/behaviors/user.py:40
+#: collective/person/behaviors/user.py:43
 msgid "Please inform a username to be used."
 msgstr ""
 
@@ -107,11 +107,11 @@ msgstr ""
 msgid "Select the utility to use for generating person titles."
 msgstr ""
 
-#: collective/person/behaviors/user.py:27
+#: collective/person/behaviors/user.py:30
 msgid "There is a person already assigned to this username"
 msgstr ""
 
-#: collective/person/behaviors/user.py:23
+#: collective/person/behaviors/user.py:26
 msgid "There is no user with this username"
 msgstr ""
 
@@ -127,8 +127,12 @@ msgstr ""
 msgid "Used in automated tests"
 msgstr ""
 
-#: collective/person/behaviors/user.py:39
+#: collective/person/behaviors/user.py:42
 msgid "Username"
+msgstr ""
+
+#: collective/person/behaviors/user.py:22
+msgid "Username must not be empty"
 msgstr ""
 
 #: collective/person/profiles/default/types/Person.xml

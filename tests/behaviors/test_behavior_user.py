@@ -94,6 +94,13 @@ class TestPloneUserBehavior:
         assert isinstance(behavior.user, MemberData)
         assert behavior.user.getUserName() == username
 
+    def test_behavior_no_username(self):
+        with api.env.adopt_roles(["Manager"]):
+            person = api.content.create(container=self.portal, type="Person", id="no-username")
+        behavior = IPloneUser(person)
+        assert behavior.username is None
+        assert behavior.user is None
+
     def test_indexer_username(self):
         """Test username indexer."""
         content = self.person
@@ -118,6 +125,11 @@ class TestPloneUserBehavior:
             IPloneUser.validateInvariants(data)
         assert "There is a person already assigned to this username" in str(exc)
 
+    def test_username_validation_empty_username(self, other_person):
+        """Test username validation when username is empty."""
+        with pytest.raises(Invalid) as exc:
+            IPloneUser(self.person).username = ""
+        assert "Username must not be empty" in str(exc)
 
 class TestNameFromUserNameBehavior:
     BEHAVIOR = "collective.person.namefromusername"
