@@ -18,6 +18,9 @@ ANNO_KEY = "collective.person.username"
 
 def validate_username(username: str):
     """Check if a username is a valid one and not in use."""
+    if not username:
+        return _("Username must not be empty")
+
     user = api.user.get(username=username)
     if not user:
         return _("There is no user with this username")
@@ -39,7 +42,6 @@ class IPloneUser(model.Schema):
         title=_("Username"),
         description=_("Please inform a username to be used."),
         vocabulary="plone.app.vocabularies.Users",
-        default="",
         required=False,
     )
 
@@ -68,11 +70,11 @@ class PloneUser:
         self.annotation = IAnnotations(context)
 
     @property
-    def username(self):
-        return self.annotation.get(ANNO_KEY, "")
+    def username(self) -> str | None:
+        return self.annotation.get(ANNO_KEY)
 
     @username.setter
-    def username(self, value):
+    def username(self, value: str):
         current = self.username
         if value == current:
             return
