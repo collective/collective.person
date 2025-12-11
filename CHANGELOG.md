@@ -9,6 +9,13 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0b4 (2025-12-11)
+
+
+### Bug fixes:
+
+- Fix handling of empty username field. @davisagli [#16](https://github.com/collective/collective.person/issues/16)
+
 ## 1.0.0b3 (2025-09-17)
 
 
