@@ -9,6 +9,18 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0b5 (2026-05-19)
+
+
+### New features:
+
+- Upgrade collective.contact_behaviors to version 1.0.0b6. @kittauri [#18](https://github.com/collective/collective.person/issues/18)
+
+
+### Internal:
+
+- update makefile to the latest ci/cd workflow @kittauri 
+
 ## 1.0.0b4 (2025-12-11)
 
 
