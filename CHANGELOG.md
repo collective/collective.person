@@ -9,6 +9,13 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0b6 (2026-05-20)
+
+
+### New features:
+
+- Added support for Plone 6.2 and Python 3.14. @ericof [#20](https://github.com/collective/collective.person/issues/20)
+
 ## 1.0.0b5 (2026-05-19)
 
 
