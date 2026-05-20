@@ -9,13 +9,10 @@ import pytest
 CONTENT_TYPE = "Person"
 
 
-class TestPerson:
+class TestPersonFTI:
     @pytest.fixture(autouse=True)
-    def _fti(self, get_fti, integration):
+    def _setup(self, get_fti):
         self.fti = get_fti(CONTENT_TYPE)
-
-    def test_fti(self):
-        assert isinstance(self.fti, DexterityFTI)
 
     def test_factory(self):
         factory = self.fti.factory
@@ -24,21 +21,49 @@ class TestPerson:
         assert isinstance(obj, Person)
 
     @pytest.mark.parametrize(
-        "behavior",
+        "attr,expected",
         [
-            "collective.person.person",
-            "collective.contact_behaviors.contact_info",
-            "volto.blocks.editable.layout",
-            "plone.namefromtitle",
-            "plone.shortname",
-            "plone.excludefromnavigation",
-            "plone.relateditems",
-            "plone.versioning",
-            "plone.leadimage",
+            ("title", "Person"),
+            ("description", ""),
+            ("global_allow", True),
+            ("filter_content_types", True),
+            (
+                "allowed_content_types",
+                (
+                    "File",
+                    "Image",
+                ),
+            ),
+            ("add_permission", "collective.person.person.add"),
+            ("klass", "collective.person.content.person.Person"),
+            (
+                "behaviors",
+                (
+                    "collective.person.person",
+                    "collective.contact_behaviors.contact_info",
+                    "volto.blocks.editable.layout",
+                    "plone.namefromtitle",
+                    "plone.shortname",
+                    "plone.leadimage",
+                    "plone.excludefromnavigation",
+                    "plone.relateditems",
+                    "plone.versioning",
+                ),
+            ),
         ],
     )
-    def test_has_behavior(self, get_behaviors, behavior):
-        assert behavior in get_behaviors(CONTENT_TYPE)
+    def test_fti(self, attr: str, expected):
+        """Test FTI values."""
+        fti: DexterityFTI = self.fti
+
+        assert isinstance(fti, DexterityFTI)
+        assert getattr(fti, attr) == expected
+
+
+class TestPerson:
+    @pytest.fixture(autouse=True)
+    def _setup(self, portal):
+        self.portal = portal
 
     def test_create(self, portal, persons_payload):
         payload = persons_payload[0]
