@@ -39,19 +39,8 @@ def roles_vocab():
 
 
 @pytest.fixture()
-def additional_profiles() -> list[str]:
-    """List of additional profiles to apply on top of the default testing profile."""
-    return [
-        "collective.person:demo",
-    ]
-
-
-@pytest.fixture()
-def portal(integration, roles_vocab, additional_profiles):
+def portal(integration, roles_vocab):
     portal = integration["portal"]
-    setup_tool = api.portal.get_tool("portal_setup")
-    for profile in additional_profiles:
-        setup_tool.runAllImportStepsFromProfile(profile)
     with api.env.adopt_user(SITE_OWNER_NAME):
         # Set registry for roles
         api.portal.set_registry_record("person.roles", roles_vocab)
@@ -85,9 +74,7 @@ def persons_payload() -> list:
 def persons(portal, persons_payload) -> dict:
     """Create Person content items."""
     response = {}
-    with api.env.adopt_roles([
-        "Manager",
-    ]):
+    with api.env.adopt_roles(["Manager"]):
         for data in persons_payload:
             content = api.content.create(container=portal, **data)
             response[content.UID()] = content.title

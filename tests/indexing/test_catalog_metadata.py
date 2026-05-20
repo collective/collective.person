@@ -4,10 +4,16 @@ from plone import api
 import pytest
 
 
+@pytest.mark.portal(
+    profiles=[
+        "collective.person:demo",
+        "collective.person:catalog",
+    ],
+)
 class TestCatalogMetadata:
     @pytest.fixture(autouse=True)
-    def _setup(self, portal):
-        self.portal = portal
+    def _setup(self, portal_class):
+        self.portal = portal_class
 
     @pytest.mark.parametrize(
         "query,column,expected",
