@@ -64,11 +64,11 @@ This package is being used by the following sites:
 Add `collective.person` as a dependency on your package's `setup.py`
 
 ```python
-    install_requires = [
-        "Plone",
-        "plone.restapi",
-        "collective.person",
-    ],
+install_requires = [
+    "Plone",
+    "plone.restapi",
+    "collective.person",
+]
 ```
 
 Also, add `collective.person` to your package's `configure.zcml` (or `dependencies.zcml`):

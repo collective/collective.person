@@ -27,6 +27,9 @@ on:
       plone-version:
         description: "Plone version to be used"
         value: ${{ inputs.plone-version }}
+      path-root:
+        description: "Path to the root of the repository"
+        value: ${{ jobs.config.outputs.path-root }}
 
 jobs:
   config:
@@ -36,18 +39,20 @@ jobs:
       docs: ${{ steps.filter.outputs.docs }}
       base-tag: ${{ steps.vars.outputs.BASE_TAG }}
       plone-version: ${{ steps.vars.outputs.plone-version }}
+      path-root: ${{ steps.vars.outputs.path-root }}
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Compute several vars needed for the CI
         id: vars
         run: |
           echo "base-tag=sha-$(git rev-parse --short HEAD)" >> $GITHUB_OUTPUT
           echo "plone-version=${{ inputs.plone-version }}" >> $GITHUB_OUTPUT
+          echo "path-root=." >> $GITHUB_OUTPUT
 
-      - uses: dorny/paths-filter@v3.0.2
+      - uses: dorny/paths-filter@v4.0.3
         id: filter
         with:
           filters: |
