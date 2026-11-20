@@ -1,1 +1,0 @@
-Fixed CI on Python 3.10 and aligned the GitHub Actions workflows and Dependabot configuration with the cookieplone-templates boilerplate. @ericof

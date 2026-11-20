@@ -9,6 +9,23 @@
 
 <!-- towncrier release notes start -->
 
+## 1.0.0b7 (2026-11-20)
+
+
+### New features:
+
+- Added spanish translations [#22](https://github.com/collective/collective.person/issues/22)
+
+
+### Bug fixes:
+
+- Removed the Editor and Owner roles from the "Add Person" permission and added an upgrade step for existing sites. @iFlameing 
+
+
+### Internal:
+
+- Fixed CI on Python 3.10 and aligned the GitHub Actions workflows and Dependabot configuration with the cookieplone-templates boilerplate. @ericof [#24](https://github.com/collective/collective.person/issues/24)
+
 ## 1.0.0b6 (2026-05-20)
 
 
