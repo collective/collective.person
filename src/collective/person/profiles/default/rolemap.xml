@@ -7,7 +7,6 @@
     >
       <role name="Manager" />
       <role name="Site Administrator" />
-      <role name="Owner" />
       <role name="Contributor" />
     </permission>
 

@@ -9,7 +9,7 @@
       destination="1011"
       >
     <genericsetup:upgradeDepends
-        title="Remove the Editor role from the Add Person permission"
+        title="Remove the Editor and Owner roles from the Add Person permission"
         import_steps="rolemap"
         />
   </genericsetup:upgradeSteps>

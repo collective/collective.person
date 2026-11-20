@@ -96,7 +96,6 @@
         "roles": [
           "Manager",
           "Site Administrator",
-          "Owner",
           "Contributor"
         ]
       },
